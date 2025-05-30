@@ -1,0 +1,17 @@
+[project]
+name = "llm-hack"
+version = "0.1.0"
+description = "LLM Hack Project"
+readme = "README.md"
+authors = [
+    { name = "LaraRos", email = "rostami.lara@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+llm-hack = "llm_hack:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
