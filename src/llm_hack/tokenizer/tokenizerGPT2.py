@@ -3,6 +3,7 @@ import tiktoken
 
 from llm_hack.tokenizer.tokenizer_interface import TokenizerInterface
 
+
 class TokenizerGPT2(TokenizerInterface):
     def __init__(self, *corpus: str):
         self.corpus = corpus

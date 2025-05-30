@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+
 class TokenizerInterface(ABC):
     @abstractmethod
     def encode(self, corpus: str) -> List[int]:
