@@ -1,5 +1,5 @@
 import unittest
-from src.llm_hack.tokenizer import Tokenizer
+from llm_hack.tokenizer import Tokenizer
 
 class TestTokenizer(unittest.TestCase):
 
