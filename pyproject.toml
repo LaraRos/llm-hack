@@ -15,3 +15,8 @@ llm-hack = "llm_hack:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
