@@ -8,11 +8,16 @@ from llm_hack.tokenizer.tokenizer import Tokenizer
 class TestDataset(unittest.TestCase):
     def setUp(self):
         self.tokenizer = Tokenizer(
-            "this is my initial text my tokenizer is trained on. it needs to be tokenized at some point. i hope that it will work with the tokenize!"
+            "this is my initial text my tokenizer is trained on. "
+            "it needs to be tokenized at some point. "
+            "i hope that it will work with the tokenize!"
         )
 
     def test_init(self):
-        """Test that data can be loaded from a file. All the tokens in the text exist in the tokenizer training data."""
+        """Test that data can be loaded from a file.
+        All the tokens in the text exist in the tokenizer training data.
+        The dataset is created correctly.
+        """
         text = "this is some text that i want to tokenize"
         encoded_text = self.tokenizer.encode(text)
         max_length = 4
