@@ -5,8 +5,7 @@ from llm_hack.tokenizer.tokenizer_interface import TokenizerInterface
 
 
 class TokenizerGPT2(TokenizerInterface):
-    def __init__(self, *corpus: str):
-        self.corpus = corpus
+    def __init__(self):
         self.encoding = tiktoken.get_encoding("gpt2")
 
     def encode(self, text: str) -> List[int]:

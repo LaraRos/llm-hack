@@ -4,7 +4,7 @@ from typing import List
 
 class TokenizerInterface(ABC):
     @abstractmethod
-    def encode(self, corpus: str) -> List[int]:
+    def encode(self, text: str) -> List[int]:
         """Convert text to token IDs."""
         pass
 
