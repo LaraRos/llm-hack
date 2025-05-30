@@ -1,5 +1,5 @@
 import unittest
-from llm_hack.tokenizer import Tokenizer
+from llm_hack.tokenizer.tokenizer import Tokenizer
 
 
 class TestTokenizer(unittest.TestCase):
@@ -21,7 +21,7 @@ class TestTokenizer(unittest.TestCase):
     def test_tokenize(self):
         tokenizer = Tokenizer()
         self.assertEqual(
-            tokenizer.tokenize("Hello, world!"), ["Hello", ",", "world", "!"]
+            tokenizer._tokenize("Hello, world!"), ["Hello", ",", "world", "!"]
         )
 
     def test_encode_decode(self):
