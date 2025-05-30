@@ -7,7 +7,9 @@ authors = [
     { name = "LaraRos", email = "rostami.lara@gmail.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "tiktoken",
+]
 
 [project.scripts]
 llm-hack = "llm_hack:main"
